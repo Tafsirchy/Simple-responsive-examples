@@ -1,0 +1,65 @@
+header,  .nav, .main, .sidebar, .advertise, .footer{
+    border: 2px solid tomato;
+    background-color: bisque;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main   sidebar"
+    "nav    main   main   advertise"
+    "footer footer footer footer";
+    gap: 20px;
+}
+header{
+    /* background-color: rgb(229, 255, 136); */
+    grid-area: header;
+    padding: 10px;
+}
+.nav{
+    /* background-color: coral; */
+    grid-area: nav;
+    padding: 10px;
+}
+
+.main{
+    /* background-color: rgb(251, 183, 95); */
+    grid-area: main;
+    padding: 10px;
+}
+
+.sidebar{
+    /* background-color: crimson; */
+    grid-area: sidebar;
+    padding: 10px;
+}
+.advertise{
+    /* background-color: rgb(77, 236, 244); */
+    grid-area: advertise;
+    padding: 10px;
+}
+.footer{
+    /* background-color: rgb(214, 127, 255); */
+    grid-area: footer;
+    padding: 10px;
+}
+@media screen and (max-width: 576px){
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer";
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .container{
+        grid-template-areas:
+        "header    header header"
+        "nav       nav    nav"
+        "sidebar   main   main"
+        "sidebar   main   main"
+        "advertise footer footer";
+}
