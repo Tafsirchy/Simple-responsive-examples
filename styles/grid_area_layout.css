@@ -1,6 +1,6 @@
 header,  .nav, .main, .sidebar, .advertise, .footer{
     border: 2px solid tomato;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 .container{
     display: grid;
@@ -12,34 +12,34 @@ header,  .nav, .main, .sidebar, .advertise, .footer{
     gap: 20px;
 }
 header{
-    /* background-color: rgb(229, 255, 136); */
+    background-color: rgb(229, 255, 136);
     grid-area: header;
     padding: 10px;
 }
 .nav{
-    /* background-color: coral; */
+    background-color: coral;
     grid-area: nav;
     padding: 10px;
 }
 
 .main{
-    /* background-color: rgb(251, 183, 95); */
+    background-color: rgb(251, 183, 95);
     grid-area: main;
     padding: 10px;
 }
 
 .sidebar{
-    /* background-color: crimson; */
+    background-color: crimson;
     grid-area: sidebar;
     padding: 10px;
 }
 .advertise{
-    /* background-color: rgb(77, 236, 244); */
+    background-color: rgb(77, 236, 244);
     grid-area: advertise;
     padding: 10px;
 }
 .footer{
-    /* background-color: rgb(214, 127, 255); */
+    background-color: rgb(214, 127, 255);
     grid-area: footer;
     padding: 10px;
 }
